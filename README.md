@@ -17,7 +17,7 @@ Catatan:
 |---|---|
 | TorchScript (disarankan) | `torch.jit.script(model).save("model.pt")` atau `torch.jit.trace(model, contoh_input).save("model.pt")` |
 | Model PyTorch utuh | `torch.save(model, "model.pt")` (kelas model harus bisa di-import) |
-| YOLO (klasifikasi/deteksi) | Bobot Ultralytics, mis. `best.pt`. Tambahkan `ultralytics` dan `opencv-python-headless` ke `requirements.txt`, serta file `packages.txt` berisi `libgl1` |
+| YOLO (klasifikasi/deteksi) | Bobot Ultralytics, mis. `best.pt`. Sudah didukung lewat `ultralytics` di `requirements.txt` dan `packages.txt` (library sistem untuk OpenCV) |
 
 `state_dict` saja tidak bisa dipakai karena tidak memuat arsitektur model.
 
